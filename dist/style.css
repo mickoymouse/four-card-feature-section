@@ -1,0 +1,140 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  background-color: #fafafa;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+.bt-red {
+  border-top: 3px solid #ea5353;
+}
+
+.bt-cyan {
+  border-top: 3px solid #45d3d3;
+}
+
+.bt-orange {
+  border-top: 3px solid #fcaf4a;
+}
+
+.bt-blue {
+  border-top: 3px solid #549ef2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 75px 0;
+}
+
+.container__top {
+  flex: 0 0 100%;
+}
+
+.container__top > h1, .container__top h6 {
+  margin: 0;
+  text-align: center;
+}
+
+.container__top :first-child, .container__top :last-child {
+  color: #a3a5ae;
+  font-weight: 200;
+}
+
+.container__top :nth-child(2) {
+  color: #4c4e61;
+  font-weight: 600;
+}
+
+.container__bottom {
+  display: grid;
+  height: 100%;
+  margin-top: 50px;
+  column-gap: 15px;
+  row-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "item1 item2 item4" "item1 item3 item4";
+  align-items: center;
+}
+
+.container__bottom__item1 {
+  grid-area: item1;
+}
+
+.container__bottom__item2 {
+  grid-area: item2;
+}
+
+.container__bottom__item3 {
+  grid-area: item3;
+}
+
+.container__bottom__item4 {
+  grid-area: item4;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container__top {
+    padding: 0 20px;
+  }
+  .container__top :first-child, .container__top :nth-child(2) {
+    font-size: 25px;
+  }
+  .container__top :last-child {
+    font-size: 16px;
+  }
+  .container__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px #a3a5ae;
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+.card > img {
+  align-self: flex-end;
+  margin-top: auto;
+  height: 50px;
+  width: 50px;
+}
+
+.card > h4, .card h6 {
+  margin: 0;
+}
+
+.card :first-child {
+  color: #4c4e61;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.card :nth-child(2) {
+  color: #a3a5ae;
+  font-weight: 200;
+  font-size: 12px;
+}
+/*# sourceMappingURL=style.css.map */
